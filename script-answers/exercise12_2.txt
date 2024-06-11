@@ -1,0 +1,21 @@
+Script started on Tue Jun 11 08:46:12 2024
+Restored session: Tue Jun 11 08:45:28 -04 2024
+/dev/fd/12:18: command not found: compdef
+[1m[7m%[27m[1m[0m                                                                                                                             ]7;file://MacBook-Air-de-Victor.local/Users/bebigomez/dev/fso/part12-containers-applications-main[0m[27m[24m[Jbebigomez@MacBook-Air-de-Victor part12-containers-applications-main % [K[?2004hddocker container run -it hello     ubuntu bash[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kaa21f24e1940: Pulling fs layer [1B[1A[2Kaa21f24e1940: Downloading [>                                                  ]  281.8kB/28.02MB[1B[1A[2Kaa21f24e1940: Downloading [=======>                                           ]  4.057MB/28.02MB[1B[1A[2Kaa21f24e1940: Downloading [============>                                      ]  7.269MB/28.02MB[1B[1A[2Kaa21f24e1940: Downloading [=====================>                             ]  11.92MB/28.02MB[1B[1A[2Kaa21f24e1940: Downloading [================================>                  ]  18.36MB/28.02MB[1B[1A[2Kaa21f24e1940: Downloading [=============================================>     ]  25.34MB/28.02MB[1B[1A[2Kaa21f24e1940: Download complete [1B[1A[2Kaa21f24e1940: Extracting [>                                                  ]  294.9kB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [===========>                                       ]  6.488MB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [=================>                                 ]  10.03MB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [=================================>                 ]  18.58MB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [=========================================>         ]   23.3MB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [==============================================>    ]  25.95MB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [=================================================> ]  27.72MB/28.02MB[1B[1A[2Kaa21f24e1940: Extracting [==================================================>]  28.02MB/28.02MB[1B[1A[2Kaa21f24e1940: Pull complete [1BDigest: sha256:e3f92abc0967a6c19d0dfa2d55838833e947b9d74edbcb0113e48535ad4be12a
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@41a80231cb8b: /root@41a80231cb8b:/# mkdir -p /usr/src/app
+[?2004l[?2004h]0;root@41a80231cb8b: /root@41a80231cb8b:/# [7mtouch /usr/src/app/index.js[27m
+[Aroot@41a80231cb8b:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@41a80231cb8b: /root@41a80231cb8b:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                             ]7;file://MacBook-Air-de-Victor.local/Users/bebigomez/dev/fso/part12-containers-applications-main[0m[27m[24m[Jbebigomez@MacBook-Air-de-Victor part12-containers-applications-main % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Tue Jun 11 08:51:27 2024
