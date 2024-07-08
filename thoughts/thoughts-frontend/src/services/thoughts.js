@@ -1,19 +1,18 @@
-import axios from "axios";
-const baseUrl = import.meta.env.VITE_BACKEND_URL
+import axios from '../util/apiClient'
 
-const getAll = () => {
-  const request = axios.get(baseUrl);
-  return request.then((response) => response.data);
+const getAll = async () => {
+  const { data } = await axios.get('/thoughts');
+  return data;
 };
 
-const getOne = (id) => {
-  const request = axios.get(`${baseUrl}/${id}`);
-  return request.then((response) => response.data);
+const getOne = async (id) => {
+  const { data } = await axios.get(`/thoughts/${id}`);
+  return data;
 };
 
-const create = (newObject) => {
-  const request = axios.post(baseUrl, newObject);
-  return request.then((response) => response.data);
+const create = async (newObject) => {
+  const { data } = await axios.post(newObject);
+  return data;
 };
 
 export default {

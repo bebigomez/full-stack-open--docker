@@ -25,19 +25,19 @@ app.get("/", (request, response) => {
   response.send("<h1>Hello World!</h1>");
 });
 
-app.get("/api/thoughts", (request, response) => {
+app.get("/thoughts", (request, response) => {
   Thought.find({}).then((thoughts) => {
     response.json(thoughts);
   });
 });
 
-app.get("/api/thoughts/:id", (request, response) => {
+app.get("/thoughts/:id", (request, response) => {
   Thought.findById(request.params.id).then((thought) => {
     response.json(thought);
   });
 });
 
-app.post("/api/thoughts", (request, response) => {
+app.post("/thoughts", (request, response) => {
   const body = request.body;
 
   if (body.title.trim().length === 0 || body.body.trim().length === 0) {
@@ -68,7 +68,7 @@ app.post("/api/thoughts", (request, response) => {
     });
 });
 
-app.patch("/api/thoughts/:id", (request, response) => {
+app.patch("/thoughts/:id", (request, response) => {
   const body = request.body;
 
   const thought = {
